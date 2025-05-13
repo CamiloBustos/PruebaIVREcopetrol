@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+  }
+  .barra-regreso {
+    background-color: #17A38A;
+    color: white;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones a los extremos */
+    align-items: center;
+    font-size: 16px;
+}
+
+.barra-regreso button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px; /* Opcional: mejora el área clickeable */
+}
+
+.barra-regreso button:hover {
+    text-decoration: underline; /* Efecto al pasar el mouse (opcional) */
+}
+
+  .titulo-container {
+    background-color: #17A38A;
+    width: 90%;
+    padding: 15px;
+    font-family: Gotham;
+    font-weight: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.imagen-container {
+  background-image: url("../images/CUENTABANCARIA.png");
+  background-size: cover;       /* Ajusta la imagen al contenedor */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  width: 90%;
+  min-height: 160px;           /* Altura mínima (ajusta según necesidad) */
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 2%;                 /* Padding reducido para mejor visualización */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+  position: relative;          /* Para superposición de texto (opcional) */
+}
+.formulario .btn-secundario {
+  width: 90%;
+  padding: 12px;
+  background-color: #004D3F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 100%;
+  cursor: pointer;
+  display: block;
+  margin: 2%;
+}
+
+
+.encuesta-texto {
+    border-radius: 10px;
+    background-color: #A1DCD2;
+    width: 90%;
+    height: 20%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    text-align: center;
+    margin: 0 auto; /* Centrado horizontal adicional */
+}
+.documento-texto {
+    border-radius: 10px;
+    background-color: #D0DFDA    ;
+    width: 90%;
+    height: 10%;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110%;
+    text-align: center;
+    margin: 0 auto; /* Centrado horizontal adicional */
+}
+
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    font-family: sans-serif;
+    background: url('../images/FONDO.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .app {
+    width: 100%;
+    max-width: 400px;
+    min-height: 70vh;
+    margin: 0 auto;
+    margin-top: 0; /* Elimina cualquier margen superior anterior */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    height: 27%;
+    background-image: url('../images/ENCABEZADO.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo-header {
+  position: absolute;
+  bottom: 0;           /* al fondo del header */
+  left: 50%;           /* centrado horizontal */
+  transform: translateX(-50%); /* para centrar con precisión */
+  width: 70%;          /* 30% del ancho del header */
+  height: 70%;         /* 80% del alto del header */
+  object-fit: contain; /* mantén proporciones */
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+}
+  .titulo {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  .subtitulo {
+    margin-top: 0%;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0px;
+    font-size: 120%;
+  }
+  .btn-grande {
+    width: 90%;  /* O el valor que prefieras para que ocupe casi todo el ancho */
+    padding: 15px;
+    background-color: #007bff; /* Puedes cambiar el color que desees */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;  /* Lo centra horizontalmente y lo separa de otros elementos */
+  }
+  
+  
+  .formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formulario label {
+    font-weight: bold;
+    color: #000;
+    margin-left: 8%;
+  }
+  
+  .formulario input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .formulario button {
+    align-self: center;
+    height: 60px;
+    width: 55%;
+    padding: 15px;
+    background-color: #004D3F;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 140%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+  
+  .input-box {
+    margin-top: 8%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .app {
+      max-width: 600px;
+      margin: 50px auto;
+    }
+  
+    .formulario button {
+      width: 60%;
+      font-size: 18px;
+    }
+  
+    .subtitulo {
+      font-size: 24px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .formulario input,
+    .formulario button {
+      padding: 20px;
+      font-size: 18px;
+    }
+  
+    .subtitulo {
+      font-size: 28px;
+    }
+  }
+  .logo-header {
+    align-content: end;
+    height: 80%;         /* ocupa todo el alto del header */
+    max-width: 80%;      /* no se pase del contenedor padre */
+    object-fit: contain;  /* mantiene proporción sin deformar */
+    display: block;
+    margin: 0 auto;        /* centra horizontalmente */
+  }
+  

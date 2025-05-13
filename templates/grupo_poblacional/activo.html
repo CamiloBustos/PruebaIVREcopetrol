@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funcionario</title>
+  <link rel="stylesheet" href="../../assets/css/grupo_poblacional.css">
+</head>
+
+<body>
+  <div class="top-background"></div>
+  <header class="header"><img src="../../assets/images/titulo.png" alt="Logo" class="logo-header"></header>
+  <div class="barra-regreso">
+    <button onclick="history.back()" class="boton-atras">
+      <img src="../../assets/images/BTNATRAS.png" alt="Atrás" class="imagen-boton">
+      Atrás
+    </button>
+  </div>
+
+  <div class="app">
+    <h2 class="subtitulo"><br><br>Selecciona la opción que<br>deseas consultar:</h2>
+    <main class="container">
+      <form class="formulario" onsubmit="validarCredenciales(event)">
+        <h2 class="titulo">Funcionario</h2>
+            <button type="button" class="btn" onclick="location.href='../activo/actualizacion_direccionActivo.html'">Actualización dirección<br> de residencia</button>
+        <br><button type="button" class="btn" onclick="location.href='../activo/actualizacion_correoOtelefonoActivo.html'">Actualización correo electrónico y número de teléfono personal</button>
+        <br><button type="button" class="btn" onclick="location.href='../activo/cambio_cuenta_bancariaActivo.html'">Cambio de número<br>cuenta bancaria</button>
+
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="../../assets/css/encuesta.css">
+</head>
+
+<body>
+  <div class="top-background"></div>
+  <header class="header"><img src="../../assets/images/titulo.png" alt="Logo" class="logo-header"></header>
+  <div class="barra-regreso">
+    <button id="boton-atras" class="boton-atras"><img src="../../assets/images/BTNATRAS.png" alt="Atrás"
+        class="imagen-boton"><span class="texto-boton">Atrás</span></button>
+    <button id="boton-home" class="boton-home"><span class="texto-boton">ir al inicio&nbsp;&nbsp</span><img
+        src="../../assets/images/HOME.PNG" alt="Atrás" class="imagen-boton"></button>
+  </div>
+  <div class="app">
+    <main class="container"><br><br>
+      <div class="encuesta">
+        <h2>Para finalizar, te invitamos a responder<br>la siguiente pregunta:</h2>
+        <h1>¿Respecto a la solución brindada, que<br>tan satisfecho estás con mi servicio?</h1>
+        <h2>donde 1 es Nada satisfecho y 5<br>Completamente satisfecho.</h2><br><br>
+
+        <div class="caritas">
+          <label>
+            <input type="radio" name="satisfaccion" value="1">
+            <span class="emoji"><img src="../../assets/images/1.png"></span>
+          </label>
+          <label>
+            <input type="radio" name="satisfaccion" value="2">
+            <span class="emoji"><img src="../../assets/images/2.png"></span>
+          </label>
+          <label>
+            <input type="radio" name="satisfaccion" value="3">
+            <span class="emoji"><img src="../../assets/images/3.png"></span>
+          </label>
+          <label>
+            <input type="radio" name="satisfaccion" value="4">
+            <span class="emoji"><img src="../../assets/images/4.png"></span>
+          </label>
+          <label>
+            <input type="radio" name="satisfaccion" value="5">
+            <span class="emoji"><img src="../../assets/images/5.png"></span>
+          </label>
+        </div>
+
+        <div class="barra" style="margin-top: 7px;">
+          <div class="segmento rojo" data-value="1"></div>
+          <div class="segmento naranja" data-value="2"></div>
+          <div class="segmento amarillo" data-value="3"></div>
+          <div class="segmento celeste" data-value="4"></div>
+          <div class="segmento verde" data-value="5"></div>
+          <div class="punto-seleccion"></div>
+        </div>
+
+        <div class="numeros" style="margin-top: 7px;">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+        </div><br><br>
+        <button class="boton-enviar">Enviar</button><br><br>
+        <h1>¡Queremos conocer tu opinión<br>sobre el servicio!</h1>
+      </div><br>
+    </main>
+  </div>
+  <div id="alerta-personalizada" class="modal-alerta" style="display: none;">
+    <div class="contenido-alerta">
+      <p id="mensaje-alerta">Mensaje aquí</p>
+      <button onclick="cerrarAlerta()">Cerrar</button>
+    </div>
+  </div>
+
+</body>
+<script src="../../js/Encuesta.js"></script>
+
+</html>

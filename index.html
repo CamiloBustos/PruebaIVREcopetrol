@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+  <header class="header"><img src="assets/images/titulo.png" alt="Logo" class="logo-header"></header>
+  <div class="app">
+    <h2 class="subtitulo"><br><br><br>Ingresa con tu cuenta de <br>correo:</h2>
+    <main class="container">
+      <form class="formulario" onsubmit="validarCredenciales(event)">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+        <button type="submit">Ingresar</button>
+      </form>
+    </main>
+  </div>
+  <div id="alerta-personalizada" class="modal-alerta">
+  <div class="contenido-alerta">
+    <p>Digíte un correo electrónico válido</p>
+    <button onclick="cerrarAlerta()">Cerrar</button>
+  </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/login.js"></script>
+</html>
